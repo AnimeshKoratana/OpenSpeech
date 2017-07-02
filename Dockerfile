@@ -40,6 +40,7 @@ RUN apt-get update && apt-get install -y  \
     pip install Cython && \
     pip install BeautifulSoup4 && \
     pip install lxml && \
+    pip install pymongo && \
     ln -s /usr/bin/python2.7 /usr/bin/python ; ln -s -f bash /bin/sh
 
 RUN cd /opt && wget http://www.digip.org/jansson/releases/jansson-2.7.tar.bz2 && \

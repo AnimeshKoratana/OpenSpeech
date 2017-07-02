@@ -1,4 +1,4 @@
-FROM debian:8
+FROM ubuntu:16.04
 MAINTAINER Animesh Koratana <koratana@stanford.edu>
 
 RUN add-apt-repository ppa:mc3man/trusty-media

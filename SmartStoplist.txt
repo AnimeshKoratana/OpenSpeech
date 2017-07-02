@@ -1,0 +1,948 @@
+#stop word list from SMART (Salton,1971).  Available at ftp://ftp.cs.cornell.edu/pub/smart/english.stop
+a
+a's
+able
+about
+above
+according
+accordingly
+across
+actually
+after
+afterwards
+again
+against
+ain't
+all
+allow
+allows
+almost
+alone
+along
+already
+also
+although
+always
+am
+among
+amongst
+an
+and
+another
+any
+anybody
+anyhow
+anyone
+anything
+anyway
+anyways
+anywhere
+apart
+appear
+appreciate
+appropriate
+are
+aren't
+around
+as
+aside
+ask
+asking
+associated
+at
+available
+away
+awfully
+b
+be
+became
+because
+become
+becomes
+becoming
+been
+before
+beforehand
+behind
+being
+believe
+below
+beside
+besides
+best
+better
+between
+beyond
+both
+brief
+but
+by
+c
+c'mon
+c's
+came
+can
+can't
+cannot
+cant
+cause
+causes
+certain
+certainly
+changes
+clearly
+co
+com
+come
+comes
+concerning
+consequently
+consider
+considering
+contain
+containing
+contains
+corresponding
+could
+couldn't
+course
+currently
+d
+definitely
+described
+despite
+did
+didn't
+different
+do
+does
+doesn't
+doing
+don't
+done
+down
+downwards
+during
+e
+each
+edu
+eg
+eight
+either
+else
+elsewhere
+enough
+entirely
+especially
+et
+etc
+even
+ever
+every
+everybody
+everyone
+everything
+everywhere
+ex
+exactly
+example
+except
+f
+far
+few
+fifth
+first
+five
+followed
+following
+follows
+for
+former
+formerly
+forth
+four
+from
+further
+furthermore
+g
+get
+gets
+getting
+given
+gives
+go
+goes
+going
+gone
+got
+gotten
+greetings
+h
+had
+hadn't
+happens
+hardly
+has
+hasn't
+have
+haven't
+having
+he
+he's
+hello
+help
+hence
+her
+here
+here's
+hereafter
+hereby
+herein
+hereupon
+hers
+herself
+hi
+him
+himself
+his
+hither
+hopefully
+how
+howbeit
+however
+i
+i'd
+i'll
+i'm
+i've
+ie
+if
+ignored
+immediate
+in
+inasmuch
+inc
+indeed
+indicate
+indicated
+indicates
+inner
+insofar
+instead
+into
+inward
+is
+isn't
+it
+it'd
+it'll
+it's
+its
+itself
+j
+just
+k
+keep
+keeps
+kept
+know
+knows
+known
+l
+last
+lately
+later
+latter
+latterly
+least
+less
+lest
+let
+let's
+like
+liked
+likely
+little
+look
+looking
+looks
+ltd
+m
+mainly
+many
+may
+maybe
+me
+mean
+meanwhile
+merely
+might
+more
+moreover
+most
+mostly
+much
+must
+my
+myself
+n
+name
+namely
+nd
+near
+nearly
+necessary
+need
+needs
+neither
+never
+nevertheless
+new
+next
+nine
+no
+nobody
+non
+none
+noone
+nor
+normally
+not
+nothing
+novel
+now
+nowhere
+o
+obviously
+of
+off
+often
+oh
+ok
+okay
+old
+on
+once
+one
+ones
+only
+onto
+or
+other
+others
+otherwise
+ought
+our
+ours
+ourselves
+out
+outside
+over
+overall
+own
+p
+particular
+particularly
+per
+perhaps
+placed
+please
+plus
+possible
+presumably
+probably
+provides
+q
+que
+quite
+qv
+r
+rather
+rd
+re
+really
+reasonably
+regarding
+regardless
+regards
+relatively
+respectively
+right
+s
+said
+same
+saw
+say
+saying
+says
+second
+secondly
+see
+seeing
+seem
+seemed
+seeming
+seems
+seen
+self
+selves
+sensible
+sent
+serious
+seriously
+seven
+several
+shall
+she
+should
+shouldn't
+since
+six
+so
+some
+somebody
+somehow
+someone
+something
+sometime
+sometimes
+somewhat
+somewhere
+soon
+sorry
+specified
+specify
+specifying
+still
+sub
+such
+sup
+sure
+t
+t's
+take
+taken
+tell
+tends
+th
+than
+thank
+thanks
+thanx
+that
+that's
+thats
+the
+their
+theirs
+them
+themselves
+then
+thence
+there
+there's
+thereafter
+thereby
+therefore
+therein
+theres
+thereupon
+these
+they
+they'd
+they'll
+they're
+they've
+think
+third
+this
+thorough
+thoroughly
+those
+though
+three
+through
+throughout
+thru
+thus
+to
+together
+too
+took
+toward
+towards
+tried
+tries
+truly
+try
+trying
+twice
+two
+u
+un
+under
+unfortunately
+unless
+unlikely
+until
+unto
+up
+upon
+us
+use
+used
+useful
+uses
+using
+usually
+uucp
+v
+value
+various
+very
+via
+viz
+vs
+w
+want
+wants
+was
+wasn't
+way
+we
+we'd
+we'll
+we're
+we've
+welcome
+well
+went
+were
+weren't
+what
+what's
+whatever
+when
+whence
+whenever
+where
+where's
+whereafter
+whereas
+whereby
+wherein
+whereupon
+wherever
+whether
+which
+while
+whither
+who
+who's
+whoever
+whole
+whom
+whose
+why
+will
+willing
+wish
+with
+within
+without
+won't
+wonder
+would
+would
+wouldn't
+x
+y
+yes
+yet
+you
+you'd
+you'll
+you're
+you've
+your
+yours
+yourself
+yourselves
+z
+zero
+2g1c
+2 girls 1 cup
+acrotomophilia
+alabama hot pocket
+alaskan pipeline
+anal
+anilingus
+anus
+apeshit
+arsehole
+ass
+asshole
+assmunch
+auto erotic
+autoerotic
+babeland
+baby batter
+baby juice
+ball gag
+ball gravy
+ball kicking
+ball licking
+ball sack
+ball sucking
+bangbros
+bareback
+barely legal
+barenaked
+bastard
+bastardo
+bastinado
+bbw
+bdsm
+beaner
+beaners
+beaver cleaver
+beaver lips
+bestiality
+big black
+big breasts
+big knockers
+big tits
+bimbos
+birdlock
+bitch
+bitches
+black cock
+blonde action
+blonde on blonde action
+blowjob
+blow job
+blow your load
+blue waffle
+blumpkin
+bollocks
+bondage
+boner
+boob
+boobs
+booty call
+brown showers
+brunette action
+bukkake
+bulldyke
+bullet vibe
+bullshit
+bung hole
+bunghole
+busty
+butt
+buttcheeks
+butthole
+camel toe
+camgirl
+camslut
+camwhore
+carpet muncher
+carpetmuncher
+chocolate rosebuds
+circlejerk
+cleveland steamer
+clit
+clitoris
+clover clamps
+clusterfuck
+cock
+cocks
+coprolagnia
+coprophilia
+cornhole
+coon
+coons
+creampie
+cum
+cumming
+cunnilingus
+cunt
+darkie
+date rape
+daterape
+deep throat
+deepthroat
+dendrophilia
+dick
+dildo
+dingleberry
+dingleberries
+dirty pillows
+dirty sanchez
+doggie style
+doggiestyle
+doggy style
+doggystyle
+dog style
+dolcett
+domination
+dominatrix
+dommes
+donkey punch
+double dong
+double penetration
+dp action
+dry hump
+dvda
+eat my ass
+ecchi
+ejaculation
+erotic
+erotism
+escort
+eunuch
+faggot
+fecal
+felch
+fellatio
+feltch
+female squirting
+femdom
+figging
+fingerbang
+fingering
+fisting
+foot fetish
+footjob
+frotting
+fuck
+fuck buttons
+fuckin
+fucking
+fucktards
+fudge packer
+fudgepacker
+futanari
+gang bang
+gay sex
+genitals
+giant cock
+girl on
+girl on top
+girls gone wild
+goatcx
+goatse
+god damn
+gokkun
+golden shower
+goodpoop
+goo girl
+goregasm
+grope
+group sex
+g-spot
+guro
+hand job
+handjob
+hard core
+hardcore
+hentai
+homoerotic
+honkey
+hooker
+hot carl
+hot chick
+how to kill
+how to murder
+huge fat
+humping
+incest
+intercourse
+jack off
+jail bait
+jailbait
+jelly donut
+jerk off
+jigaboo
+jiggaboo
+jiggerboo
+jizz
+juggs
+kike
+kinbaku
+kinkster
+kinky
+knobbing
+leather restraint
+leather straight jacket
+lemon party
+lolita
+lovemaking
+make me come
+male squirting
+masturbate
+menage a trois
+milf
+missionary position
+motherfucker
+mound of venus
+mr hands
+muff diver
+muffdiving
+nambla
+nawashi
+negro
+neonazi
+nigga
+nigger
+nig nog
+nimphomania
+nipple
+nipples
+nsfw images
+nude
+nudity
+nympho
+nymphomania
+octopussy
+omorashi
+one cup two girls
+one guy one jar
+orgasm
+orgy
+paedophile
+paki
+panties
+panty
+pedobear
+pedophile
+pegging
+penis
+phone sex
+piece of shit
+pissing
+piss pig
+pisspig
+playboy
+pleasure chest
+pole smoker
+ponyplay
+poof
+poon
+poontang
+punany
+poop chute
+poopchute
+porn
+porno
+pornography
+prince albert piercing
+pthc
+pubes
+pussy
+queaf
+queef
+quim
+raghead
+raging boner
+rape
+raping
+rapist
+rectum
+reverse cowgirl
+rimjob
+rimming
+rosy palm
+rosy palm and her 5 sisters
+rusty trombone
+sadism
+santorum
+scat
+schlong
+scissoring
+semen
+sex
+sexo
+sexy
+shaved beaver
+shaved pussy
+shemale
+shibari
+shit
+shitblimp
+shitty
+shota
+shrimping
+skeet
+slanteye
+slut
+s&m
+smut
+snatch
+snowballing
+sodomize
+sodomy
+spic
+splooge
+splooge moose
+spooge
+spread legs
+spunk
+strap on
+strapon
+strappado
+strip club
+style doggy
+suck
+sucks
+suicide girls
+sultry women
+swastika
+swinger
+tainted love
+taste my
+tea bagging
+threesome
+throating
+tied up
+tight white
+tit
+tits
+titties
+titty
+tongue in a
+topless
+tosser
+towelhead
+tranny
+tribadism
+tub girl
+tubgirl
+tushy
+twat
+twink
+twinkie
+two girls one cup
+undressing
+upskirt
+urethra play
+urophilia
+vagina
+venus mound
+vibrator
+violet wand
+vorarephilia
+voyeur
+vulva
+wank
+wetback
+wet dream
+white power
+wrapping men
+wrinkled starfish
+xx
+xxx
+yaoi
+yellow showers
+yiffy
+zoophilia

@@ -11,6 +11,8 @@ from pymongo import MongoClient
 
 def main():
     parser = argparse.ArgumentParser(description='Runs the Kafka Client to Transcribe Videos and Store the Output in MongoDB')
+    parser.add_argument('--trans_server', type=str, help='Location of Kafka Producer',
+                        default="ws://localhost:80/client/ws/speech")
     parser.add_argument('--kafka', type=str, help='Location of Kafka Producer', default="ec2-52-30-104-224.eu-west-1.compute.amazonaws.com")
     parser.add_argument('--mp3_dir', type=str, help='Default is /content/audio', default="/content/audio")
     parser.add_argument('--mp4_dir', type=str, help='Default is /content/video',  default="/content/video")
@@ -31,19 +33,19 @@ def main():
                 file_path = get_file_path(input_msg, mp4dir=args.mp3_dir, mp3dir=args.mp3_dir)
                 try:
                     if not file_path.__eq__("donothing"):
-                        output = run_pipeline(file_path=get_file_path(file_path, rake))
+                        output = run_pipeline(file_path=get_file_path(file_path, rake), trans_uri=args.trans_uri)
                         collection.insert_one(output)
                     else:
                         print("create-transcription tag was not found in the input message...skipping")
                 except:
                     print ("Error on " + input_msg + " ... Moving On")
     else:
-        run_pipeline(args.debug, rake=rake)
+        run_pipeline(args.debug, rake=rake, trans_uri=args.trans_uri)
 
 
 
 
-def run_pipeline(file_path, rake):
+def run_pipeline(file_path, rake, trans_uri):
     print("Downsampling File and Cleaning Up Noise" + file_path)
     cleaned_file = downsample_audio(file_path)
     transcription = client.getTranscription(cleaned_file)

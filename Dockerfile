@@ -74,11 +74,7 @@ RUN cd /opt && \
     rm -rf /opt/kaldi-gstreamer-server/.git/ && \
     rm -rf /opt/kaldi-gstreamer-server/test/
 
-COPY start.sh stop.sh /opt/
-
-RUN chmod +x /opt/start.sh && \
-    chmod +x /opt/stop.sh && \
-    cd /opt && git clone https://github.com/AnimeshKoratana/OpenSpeech.git && \
+RUN cd /opt && git clone https://github.com/AnimeshKoratana/OpenSpeech.git && \
     cd OpenSpeech && sh install_aeneas_deps.sh && \
     pip install aeneas && \
     python -m aeneas.diagnostics

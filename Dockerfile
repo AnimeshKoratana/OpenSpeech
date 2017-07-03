@@ -4,7 +4,7 @@ MAINTAINER Animesh Koratana <koratana@stanford.edu>
 RUN apt-get update && apt-get install -y  \
     unzip \
     gcc \
-    espeak \
+    espeak && \
     apt-get clean autoclean && \
     apt-get autoremove -y && \
     pip install numpy && \

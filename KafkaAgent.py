@@ -18,9 +18,9 @@ def main():
     parser.add_argument('--mp4_dir', type=str, help='Default is /content/video',  default="/content/video")
     parser.add_argument('--debug', type=str, help='Just run on one input file')
     args = parser.parse_args()
-    rake = RAKE.Rake('SmartStoplist.txt');
+    rake = RAKE.Rake('/opt/SmartStoplist.txt');
 
-    subprocess.call("sh start.sh -y /opt/models/english_nnet2.yaml", shell=True)
+    subprocess.call("sh /opt/start.sh -y /opt/models/english_nnet2.yaml", shell=True)
 
     if not args.debug:
         mongoclient = MongoClient(os.environ['MONGO_HOST'])

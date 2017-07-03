@@ -23,6 +23,8 @@ def main():
 
     rake = RAKE.Rake('SmartStoplist.txt');
 
+    subprocess.call("sh start.sh", shell=True)
+
     if not args.debug:
         mongoclient = MongoClient(os.environ['MONGO_HOST'])
         db = mongoclient[os.environ['MONGO_DB']].authenticate(os.environ['MONGO_USER'], os.environ['MONGO_PASS'])
@@ -48,7 +50,7 @@ def main():
 def run_pipeline(file_path, rake, trans_uri):
     print("Downsampling File and Cleaning Up Noise" + file_path)
     cleaned_file = downsample_audio(file_path)
-    transcription = client.getTranscription(cleaned_file)
+    transcription = client.getTranscription(cleaned_file, uri=trans_uri)
     write_transcription_file(transcription)
     keywords = rake.run(transcription)
     time_aligned = list(align_audio()['fragments'])

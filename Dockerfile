@@ -81,4 +81,9 @@ RUN cd /opt && git clone https://github.com/AnimeshKoratana/OpenSpeech.git && \
 
 ADD /media/kaldi_models /opt/models
 
+RUN git clone https://github.com/s3fs-fuse/s3fs-fuse /s3fs
+RUN cd /s3fs && ./autogen.sh && ./configure --prefix=/usr --with-openssl && make && make install
+RUN rm -rf /s3fs
+RUN mkdir -p /mnt/s3
+
 

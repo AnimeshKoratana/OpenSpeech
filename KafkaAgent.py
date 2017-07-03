@@ -23,7 +23,7 @@ def main():
 
     rake = RAKE.Rake('SmartStoplist.txt');
 
-    subprocess.call("sh start.sh", shell=True)
+    subprocess.call("sh start.sh -y /opt/models/english_nnet2.yaml", shell=True)
 
     if not args.debug:
         mongoclient = MongoClient(os.environ['MONGO_HOST'])

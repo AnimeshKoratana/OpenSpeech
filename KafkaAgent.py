@@ -17,10 +17,7 @@ def main():
     parser.add_argument('--mp3_dir', type=str, help='Default is /content/audio', default="/content/audio")
     parser.add_argument('--mp4_dir', type=str, help='Default is /content/video',  default="/content/video")
     parser.add_argument('--debug', type=str, help='Just run on one input file')
-
-
     args = parser.parse_args()
-
     rake = RAKE.Rake('SmartStoplist.txt');
 
     subprocess.call("sh start.sh -y /opt/models/english_nnet2.yaml", shell=True)

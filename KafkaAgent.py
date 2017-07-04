@@ -40,7 +40,7 @@ def main():
                     print ("Error on " + input_msg.value + " ... Moving On")
 
     else:
-        run_pipeline(args.debug, rake=rake, trans_uri=args.trans_uri)
+        run_pipeline(args.debug, rake=rake, trans_uri=args.trans_server)
 
 
 def run_pipeline(file_path, rake, trans_uri):

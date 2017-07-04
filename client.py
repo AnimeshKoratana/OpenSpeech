@@ -1,6 +1,5 @@
 import argparse
 from ws4py.client.threadedclient import WebSocketClient
-import time
 import threading
 import sys
 import urllib
@@ -106,8 +105,8 @@ class MyClient(WebSocketClient):
         return self.previous_trans
 
     def clean_ws(self):
-        self.close_connection()
-        self.close()
+        self.close(code=1006, reason=" ")
+        time.sleep(0.2)
 
 
 def getTranscription(audiofile, uri ="ws://localhost:8080/client/ws/speech", rate = 32000, content_type = ''):
@@ -124,6 +123,7 @@ def getTranscription(audiofile, uri ="ws://localhost:8080/client/ws/speech", rat
         final_transcription += line
         final_transcription += " "
     ws.clean_ws()
+    print str(ws.final_hyp_queue)
     return final_transcription
 
 

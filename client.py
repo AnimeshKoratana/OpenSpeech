@@ -119,7 +119,7 @@ def getTranscription(audiofile, uri ="ws://localhost:8080/client/ws/speech", rat
     for line in list(ws.gettrans()):
         final_transcription += line
         final_transcription += " "
-    ws.close()
+    ws.terminate()
     return final_transcription
 
 

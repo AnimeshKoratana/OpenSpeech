@@ -105,6 +105,10 @@ class MyClient(WebSocketClient):
     def gettrans(self):
         return self.previous_trans
 
+    def clean_ws(self):
+        self.close_connection()
+        self.close()
+
 
 def getTranscription(audiofile, uri ="ws://localhost:8080/client/ws/speech", rate = 32000, content_type = ''):
     if content_type == '' and audiofile.endswith(".raw"):
@@ -119,7 +123,7 @@ def getTranscription(audiofile, uri ="ws://localhost:8080/client/ws/speech", rat
     for line in list(ws.gettrans()):
         final_transcription += line
         final_transcription += " "
-    ws.terminate()
+    ws.clean_ws()
     return final_transcription
 
 

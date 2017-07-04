@@ -79,7 +79,7 @@ class MyClient(WebSocketClient):
                     if len(print_trans) > 80:
                         print_trans = "... %s" % print_trans[-76:]
                     print >> sys.stderr, '\r%s' % print_trans,
-                    if (self.previous_trans.__getitem__(self.previous_trans.__len__()-1).__len__() - trans.__len__()) < 20:
+                    if (self.previous_trans.__getitem__(self.previous_trans.__len__()-1).__len__() - trans.__len__()) < 12:
                         self.previous_trans[self.previous_trans.__len__()-1] = trans
                     else:
                         self.previous_trans.append(trans)
@@ -115,7 +115,6 @@ def getTranscription(audiofile, uri ="ws://localhost:8080/client/ws/speech", rat
     ws.connect()
     result = ws.get_full_hyp()
     print result.encode('utf-8')
-
     final_transcription = ""
     for line in list(ws.gettrans()):
         final_transcription += line

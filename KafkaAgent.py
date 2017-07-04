@@ -29,7 +29,7 @@ def main():
         consumer = KafkaConsumer("manage-transcription", bootstrap_servers=args.kafka)
         while (True):
             for input_msg in consumer:
-                file_path = get_file_path(input_msg, mp4dir=args.mp3_dir, mp3dir=args.mp3_dir)
+                file_path = get_file_path(input_msg.value, mp4dir=args.mp4_dir, mp3dir=args.mp3_dir)
                 try:
                     if not file_path.__eq__("donothing"):
                         output = run_pipeline(file_path=get_file_path(file_path, rake), trans_uri=args.trans_uri)
@@ -37,11 +37,10 @@ def main():
                     else:
                         print("create-transcription tag was not found in the input message...skipping")
                 except:
-                    print ("Error on " + input_msg + " ... Moving On")
+                    print ("Error on " + input_msg.value + " ... Moving On")
+
     else:
         run_pipeline(args.debug, rake=rake, trans_uri=args.trans_uri)
-
-
 
 
 def run_pipeline(file_path, rake, trans_uri):
@@ -100,10 +99,10 @@ def get_file_path(input_message, mp4dir, mp3dir):
         path = str(str(input_message).split("##")[1])
         fullpath = ""
         if (path.endswith('.mp4') or path.endswith('.m4v')):
-            fullpath+=mp4dir
+            fullpath += mp4dir
         elif path.endswith('.mp3'):
-            fullpath+=mp3dir
-        fullpath+=path
+            fullpath += mp3dir
+        fullpath += path
         return path
     else:
         return "donothing"
